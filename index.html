@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/mol1.png" />
+    <link rel="stylesheet" href="preloader.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d6d2ca" />
+    <title>MOL - Interactive Map</title>
+  </head>
+  <body>
+    <!-- <div id="debug"></div> -->
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="loading">
+          <img class="loader" src="/images/loader.svg" alt="Loader">
+          <p class="loading-progress">0</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="experience">
+      <canvas class="experience-canvas"></canvas>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <img class="logo" src="/images/MOL-logo.png" width="260px" alt="Logo Plateforme 10">
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Points of Interests -->
+      <div class="point mudac museum">
+        <img class="label" src="/images/logo-mudac.svg" alt="Logo Mudac">
+        <div class="text">Musée Cantonal de Design et d'Arts Appliqués Contemporains</div>
+      </div>
+      <div class="point elysee museum">
+        <img class="label" src="/images/VISION.png" width="140px" alt="Logo Our Vision">
+        <div class="text">Our Vision</div>
+      </div>
+      <div class="point arcadia restaurant">
+        <img class="label icn" src="/images/about.png" alt="About Icon">
+        <div class="text">About Missing Objects Library</div>
+      </div>
+      <div class="point nabi restaurant">
+        <img class="label icn" src="/images/icn-restaurant.svg" alt="Restaurant Icon">
+        <div class="text">Le Nabi Café-Restaurant</div>
+      </div>
+      <div class="point lumen restaurant">
+        <img class="label" src="/images/HIDDEN HYGIENE.png" width="100px" alt="Logo HIDDEN HYGIENE">
+        <div class="text">View Exhibit "Hidden Hygiene"</div>
+      </div>
+      <div class="point mcba museum">
+        <img class="label" src="/images/NON-WESTERN.png" width="190px" alt="Logo Non-Western">
+        <div class="text">View Exhibit "Non-Western Display Device"</div>
+      </div>
+
+      <!-- Info Panels  -->
+      <div class="info-panel">
+        <div class="info-panel-header">
+          <img class="close" src="/images/icn-close.svg" alt="">
+        </div>
+        <div class="info-panel-content">
+          <div class="info-panel-content-wrapper">
+            <img class="info-panel-image" src="" alt="">
+            <img class="info-panel-logo" src="" alt="" width="18%">
+            <h2 class="info-panel-title"></h2>
+            <p class="info-panel-lead"></p>
+            <p class="info-panel-description"></p>
+
+            <a class="info-panel-website" href="" target="_blank">
+              <button>Learn More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="controls">
+        <p class="controls-mouse">
+          Mouse Controls<br><br>
+          Left - Rotate<br>
+          Right - Move<br>
+          Middle - Zoom
+        </p>
+        <p class="controls-touch">
+          Controls<br><br>
+          One Finger Drag - Rotate<br>
+          Two Finger Drag - Move<br>
+          Pinch/Spread - Zoom<br>
+        </p>
+      </div>
+      <div class="footer">
+        <div class="designed-by">
+          <a href="./about.html" >Collaboration</a>
+        </div>
+        <div class="links">
+          <a href="https://github.com/Kathyw15/mol" target="_blank">Download Dataset</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
